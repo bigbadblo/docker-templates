@@ -1,1 +1,52 @@
-
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/bigbadblo/docker-templates/master/bigbadblo/lgtv-alexa-skill.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>HomeAutomation</Category>
+  <Name>lgtv-alexa-skill</Name>
+  <Description>
+    This skill is to create a Node.js server to act as a bridge between an LGTV running webOS and Alexa-based devices and a select set of skills to control basic functions, inputs and webOS applications.[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where lgtv-alexa-skill will store it's configuration file, database and logs.[br]
+  </Description>
+  <Overview>
+    To include: details regarding configuration setup for end-users.[br]
+    [br][br]
+  </Overview>
+  <Support>https://forums.lime-technology.com/topic/TEST/</Support>
+  <Registry>https://registry.hub.docker.com/u/bigbadblo/lgtv-skill-alexa/</Registry>
+  <GitHub>https://github.com/bigbadblo/lgtv-alexa-skill</GitHub>
+  <Repository>bigbadblo/lgtv-alexa-skill</Repository>
+  <Project>https://github.com/lucone83/lgtv-alexa-skill</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>https://raw.githubusercontent.com/bigbadblo/docker-templates/master/bigbadblo/images/webos-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.me/bigbadblo</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
