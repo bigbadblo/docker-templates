@@ -13,10 +13,10 @@
   <Privileged>false</Privileged>
   <Icon>https://raw.githubusercontent.com/bigbadblo/docker-templates/master/bigbadblo/images/webos-icon.png</Icon>  
   <Overview>To include: details regarding configuration setup for end-users.</Overview>
-  <Config Name="tvMAC" Target="XX:XX:XX:XX:XX:XX" Default="" Mode="" Description="Your LGTV's MAC Address" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="tvIP" Target="xxx.xxx.xxx.xxx" Default="" Mode="" Description="Your LGTV's IP Address" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="tvNAME" Target="your_tv_name" Default="" Mode="" Description="TV" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="tvAppNAME" Target="you_tv_app_name" Default="" Mode="" Description="TV" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="tvMAC" Target="tvMAC" Default="" Mode="" Description="Your LGTV's MAC Address" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="tvIP" Target="tvIP" Default="" Mode="" Description="Your LGTV's IP Address" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="tvNAME" Target="tvNAME" Default="" Mode="" Description="TV" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="tvAppNAME" Target="tvAppNAME" Default="" Mode="" Description="TV" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="UMASK" Target="UMASK" Default="000" Mode="" Description="UMASK" Type="Variable" Display="advanced-hide" Required="true" Mask="false">000</Config>
   <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
   <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>  
