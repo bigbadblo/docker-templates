@@ -4,67 +4,26 @@
   <Beta>False</Beta>
   <Category>HomeAutomation</Category>
   <Name>lgtv-alexa-skill</Name>
-  <Description>
-    This skill is to create a Node.js server to act as a bridge between an LGTV running webOS and Alexa-based devices and a select set of skills to control basic functions, inputs and webOS applications.[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where lgtv-alexa-skill will store it's configuration file, database and logs.[br]
-  </Description>
-  <Overview>
-    To include: details regarding configuration setup for end-users.[br]
-    [br][br]
-  </Overview>
+  <Description>This skill is to create a Node.js server to act as a bridge between an LGTV running webOS and Alexa-based devices and a select set of skills to control basic functions, inputs and webOS applications.</Description>
+  <Overview>To include: details regarding configuration setup for end-users.</Overview>
   <Support>https://forums.lime-technology.com/topic/TEST/</Support>
   <Registry>https://registry.hub.docker.com/u/bigbadblo/lgtv-skill-alexa/</Registry>
   <GitHub>https://github.com/bigbadblo/lgtv-alexa-skill</GitHub>
   <Repository>bigbadblo/lgtv-alexa-skill</Repository>
   <Project>https://github.com/lucone83/lgtv-alexa-skill</Project>
-  <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Networking>
-    <Mode>host</Mode>
-    <Publish>
-    </Publish>
-  </Networking>
-  <Environment>
-    <Variable>
-      <Name>tvMAC</Name>
-      <Value>XX:XX:XX:XX:XX:XX</Value>
-    </Variable>
-    <Variable>
-      <Name>tvIP</Name>
-      <Value>xxx.xxx.xxx.xxx</Value>
-    </Variable>
-    <Variable>
-      <Name>tvNAME</Name>
-      <Value>your_tv_name</Value>
-    </Variable>
-    <Variable>
-      <Name>tvAppNAME</Name>
-      <Value>TV</Value>
-    </Variable>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
+  <Network>host</Network>
+  <Config Name="tvMAC" Target="XX:XX:XX:XX:XX:XX" Default="" Mode="" Description="Your LGTV's MAC Address" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="tvIP" Target="xxx.xxx.xxx.xxx" Default="" Mode="" Description="Your LGTV's IP Address" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="tvNAME" Target="your_tv_name" Default="" Mode="" Description="TV" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="tvAppNAME" Target="you_tv_app_name" Default="" Mode="" Description="TV" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="UMASK" Target="UMASK" Default="000" Mode="" Description="UMASK" Type="Variable" Display="advanced-hide" Required="true" Mask="false">000</Config>
+  <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>  
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/cache/appdata/lgtv" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/lgtv</Config>
   <Icon>https://raw.githubusercontent.com/bigbadblo/docker-templates/master/bigbadblo/images/webos-icon.png</Icon>
-  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
-  <DonateLink>https://www.paypal.me/bigbadblo</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <ExtraParams></ExtraParams>
+<DonateText>If you appreciate my work, then please consider buying me a coffee! :D</DonateText>
+<DonateLink>https://www.paypal.me/bigbadblo</DonateLink>
+<DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+<ExtraParams></ExtraParams>
 </Containers>
