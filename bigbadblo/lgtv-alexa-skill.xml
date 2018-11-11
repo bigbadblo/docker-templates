@@ -1,27 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Container>
-  <TemplateURL>https://raw.githubusercontent.com/bigbadblo/docker-templates/master/bigbadblo/lgtv-alexa-skill.xml</TemplateURL>
-  <Beta>False</Beta>
-  <Category>HomeAutomation</Category>
+<Container version="2">
   <Name>lgtv-alexa-skill</Name>
-  <Support>https://forums.lime-technology.com/topic/TEST/</Support>
-  <Description>This skill is to create a Node.js server to act as a bridge between an LGTV running webOS and Alexa-based devices and a select set of skills to control basic functions, inputs and webOS applications.</Description>
-  <Project>https://github.com/lucone83/lgtv-alexa-skill</Project>
-  <Registry>https://registry.hub.docker.com/u/bigbadblo/lgtv-skill-alexa/</Registry>
-  <Repository>bigbadblo/lgtv-alexa-skill</Repository>
+  <Repository>https://github.com/bigbadblo/lgtv-alexa-skill</Repository>
+  <Registry>https://hub.docker.com/r/bigbadblo/lgtv-alexa-skill/</Registry>
   <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Icon>https://raw.githubusercontent.com/bigbadblo/docker-templates/master/bigbadblo/images/webos-icon.png</Icon>  
-  <Overview>To include: details regarding configuration setup for end-users.</Overview>
-  <Config Name="tvMAC" Target="tvMAC" Default="" Mode="" Description="Your LGTV's MAC Address" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="tvIP" Target="tvIP" Default="" Mode="" Description="Your LGTV's IP Address" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="tvNAME" Target="tvNAME" Default="" Mode="" Description="TV" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="tvAppNAME" Target="tvAppNAME" Default="" Mode="" Description="TV" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="UMASK" Target="UMASK" Default="000" Mode="" Description="UMASK" Type="Variable" Display="advanced-hide" Required="true" Mask="false">000</Config>
-  <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
-  <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>  
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/cache/appdata/lgtv" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/lgtv</Config>
-<DonateText>If you appreciate my work, then please consider buying me a coffee! :D</DonateText>
-<DonateLink>https://www.paypal.me/bigbadblo</DonateLink>
-<DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
+  <Support/>
+  <Project/>
+  <Overview>This Docker image creates a Node.js server to act as a bridge between an LGTV running webOS and Alexa-based devices, and a select set of skills to control basic functions, inputs and webOS applications. TBD: Include additional details regarding configuration setup for end-users, including adding inputs and WebOS native application support.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/bigbadblo/docker-templates/master/bigbadblo/images/webos-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1541921608</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This Docker image creates a Node.js server to act as a bridge between an LGTV running webOS and Alexa-based devices, and a select set of skills to control basic functions, inputs and webOS applications. TBD: Include additional details regarding configuration setup for end-users, including adding inputs and WebOS native application support.</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+  <Variable>
+    <Value>XX:XX:XX:XX:XX:XX</Value>
+    <Name>tvMAC</Name>
+    <Mode/>
+  </Variable>
+  <Variable>
+    <Value>xxx.xxx.xxx.xxx</Value>
+    <Name>tvIP</Name>
+    <Mode/>
+  </Variable>
+  <Variable>
+    <Value>TV</Value>
+    <Name>tvNAME</Name>
+    <Mode/>
+  </Variable>
+  <Variable>
+    <Value>TV</Value>
+    <Name>tvAppNAME</Name>
+    <Mode/>
+  </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="tvMAC" Target="tvMAC" Default="" Mode="" Description="Your LGTV's MAC address" Type="Variable" Display="always" Required="false" Mask="false">XX:XX:XX:XX:XX:XX</Config>
+  <Config Name="tvIP" Target="tvIP" Default="" Mode="" Description="Your LGTV's IP address (best to assign manual / static IP via tv and/or router)" Type="Variable" Display="always" Required="false" Mask="false">xxx.xxx.xxx.xxx</Config>
+  <Config Name="tvNAME" Target="tvNAME" Default="" Mode="" Description="Default name for LGTV" Type="Variable" Display="always" Required="false" Mask="false">TV</Config>
+  <Config Name="tvAppNAME" Target="tvAppNAME" Default="TV" Mode="" Description="Default Alexa App name for LGTV" Type="Variable" Display="always" Required="false" Mask="false">TV</Config>
 </Container>
