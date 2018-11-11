@@ -27,6 +27,22 @@
   </Networking>
   <Environment>
     <Variable>
+      <Name>tvMAC</Name>
+      <Value>XX:XX:XX:XX:XX:XX</Value>
+    </Variable>
+    <Variable>
+      <Name>tvIP</Name>
+      <Value>xxx.xxx.xxx.xxx</Value>
+    </Variable>
+    <Variable>
+      <Name>tvNAME</Name>
+      <Value>your_tv_name</Value>
+    </Variable>
+    <Variable>
+      <Name>tvAppNAME</Name>
+      <Value>TV</Value>
+    </Variable>
+    <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
     </Variable>
