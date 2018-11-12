@@ -23,12 +23,12 @@
   </Networking>
   <Environment>
     <Variable>
-      <Value/>
+      <Value/>TV Mac Address</Value>
       <Name>tvMAC</Name>
       <Mode/>
     </Variable>
     <Variable>
-      <Value/>
+      <Value/>TV IP</Value>
       <Name>tvIP</Name>
       <Mode/>
     </Variable>
