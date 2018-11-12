@@ -64,6 +64,6 @@ This Docker image creates a Node.js server to act as a bridge between an LGTV ru
 <Labels/>
 <Config Name="tvMAC" Target="tvMAC" Default="" Mode="" Description="Your LGTV's MAC address" Type="Variable" Display="always" Required="true" Mask="false"/></Config>
 <Config Name="tvIP" Target="tvIP" Default="" Mode="" Description="Your LGTV's IP address (best to assign manual / static IP via tv and/or router)" Type="Variable" Display="always" Required="true" Mask="false"/></Config>
-<Config Name="tvNAME" Target="tvName" Default="" Mode="" Description="Default name for LGTV" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+<Config Name="tvNAME" Target="tvName" Default="" Mode="" Description="Default name for LGTV" Type="Variable" Display="always" Required="true" Mask="true"></Config>
 <Config Name="tvAppNAME" Target="tvAppNAME" Default="" Mode="" Description="Default Alexa App name for LGTV" Type="Variable" Display="always" Required="true" Mask="false"></Config>
 </Container>
